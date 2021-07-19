@@ -10,8 +10,7 @@
         <form action="{% url 'accountapp:delete' pk=target_user.pk %}" method="post">
             {% csrf_token %}
             <div class="m-4">
-                <input type="submit"
-                       class="btn btn-danger rounded-pill px-5">
+                <input type="submit" class="btn btn-danger rounded-pill px-5">
             </div>
         </form>
     </div>
