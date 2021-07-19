@@ -10,9 +10,14 @@
         {{ target_user.date_joined }}
     </div>
     <div>
-        <p>
-            <a href="{% url 'accountapp:update' pk=user.pk %}">Update Info</a>     {# 내 페이지의 유저  #}
-        </p>
+        <a href="{% url 'accountapp:update' pk=user.pk %}">
+            Update Info
+        </a>     {# user : 요청을 보내는 주체 #}
+    </div>
+    <div>
+        <a href="{% url 'accountapp:delete' pk=user.pk %}">
+            Quit
+        </a>
     </div>
 </div>
 

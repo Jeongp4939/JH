@@ -8,7 +8,7 @@
         <h4>Update Info</h4>
     </div>
     <div>
-        <form action="{% url 'accountapp:update' pk=target_user.pk %}" method="post">
+        <form action="{% url 'accountapp:update' pk=target_user.pk %}" method="post">   {# target_user : 보고자 하는 객체(서버에 있는 account) #}
             {% csrf_token %}
             {% bootstrap_form form %}
             <div class="m-4">
