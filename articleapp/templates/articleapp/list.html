@@ -30,7 +30,7 @@
                 <a href="{% url 'articleapp:detail' pk=article.pk %}">
                     <img src="{{ article.image.url }}" alt="">
                 </a>
-                <span>{{ article.title }}</span>
+                <span class="NNS_B m-3">{{ article.title }}</span>
             </div>
 
         {% endfor %}
@@ -38,5 +38,8 @@
     </div>
 
     <script src="{% static 'js/magicgrid.js' %}"></script>
+
+    {% include 'snippets/pagination.html' %}
+
 
 {% endblock %}
